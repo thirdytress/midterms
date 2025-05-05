@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thirdy Garcia - Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0d6efd;
+      --secondary-color: #000000;
+      --light-bg: #f8f9fa;
+      --dark-bg: #121212;
+      --text-light: #ffffff;
+      --text-dark: #212529;
+      --card-bg: #1f1f1f;
+    }
+
+    body {
+      background-color: var(--dark-bg);
+      color: var(--text-light);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .navbar {
+      background-color: var(--primary-color);
+    }
+
+    .navbar-brand,
+    .nav-link {
+      color: var(--text-light) !important;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: #d0e4ff !important;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #0a58ca, #0d6efd);
+      color: var(--text-light);
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 50px;
+      color: var(--primary-color);
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: var(--primary-color);
+      margin: 10px auto;
+      border-radius: 2px;
+    }
+
+    .profile-img {
+      border-radius: 10px;
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      color: var(--text-light);
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .progress {
+      background-color: #2e2e2e;
+    }
+
+    .progress-bar {
+      background-color: var(--primary-color);
+    }
+
+    .btn-custom {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #084298;
+    }
+
+    .contact-form .form-control {
+      background-color: #1e1e1e;
+      color: var(--text-light);
+      border: 1px solid #444;
+    }
+
+    .form-label {
+      color: var(--text-light);
+    }
+
+    footer {
+      background-color: var(--secondary-color);
+      color: var(--text-light);
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: var(--primary-color);
+      margin: 0 10px;
+      font-size: 1.2rem;
+    }
+
+    footer {
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  padding: 20px 0;
+  text-align: center; /* This centers all text and inline elements */
+}
+
+footer div {
+  margin-top: 10px;
+}
+
+footer a {
+  color: var(--primary-color);
+  margin: 0 10px;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Thirdy Garcia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Hello, I'm Thirdy Garcia</h1>
+      <p class="lead">IT Student • Developer • Dreamer</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="./images/image.jpg" alt="Profile Image" class="profile-img">
+        </div>
+        <div class="col-md-6">
+          <p>I’m an imaginative and driven Information Technology student with a strong interest in software development. I’ve built solid skills in areas such as web development, data science, and database management. My passion lies in crafting innovative solutions and exploring new technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./images/elem.jpg" class="card-img-top" alt="Elementary">
+            <div class="card-body">
+              <h5 class="card-title">Elementary</h5>
+              <p>Our Lady of Lourdes School, Lipa City</p>
+              <p><small>Graduated: 2016</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./images/High.png" class="card-img-top" alt="High School">
+            <div class="card-body">
+              <h5 class="card-title">High School</h5>
+              <p>Lipa City Colleges Silvercrest</p>
+              <p><small>Graduated: 2022</small></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="./images/coll.png" class="card-img-top" alt="College">
+            <div class="card-body">
+              <h5 class="card-title">College</h5>
+              <p>NU Lipa - BS in Information Technology</p>
+              <p><small>2nd Year</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <p>HTML/CSS</p>
+          <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <p>Java</p>
+          <div class="progress"><div class="progress-bar" style="width: 60%"></div></div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <p>Python</p>
+          <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <p>JavaScript</p>
+          <div class="progress"><div class="progress-bar" style="width: 55%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="./images/html.png" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Basic HTML Code</h5>
+              <p>A beginner-friendly static site showing HTML structure and layout principles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="card">
+            <img src="./images/appdev.webp" class="card-img-top" alt="Aralytics">
+            <div class="card-body">
+              <h5 class="card-title">Aralytics App</h5>
+              <p>An Android app that helps students manage their time and tasks efficiently.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="row">
+        <div class="col-md-5 mb-4">
+          <div class="p-4 bg-dark rounded shadow">
+            <ul class="list-unstyled fs-5">
+              <li class="mb-3"><i class="fab fa-facebook me-2 text-primary"></i>Facebook: Thirdy Garcia</li>
+              <li class="mb-3"><i class="fas fa-envelope me-2 text-danger"></i>Email: jgarvia9@gmail.com</li>
+              <li class="mb-3"><i class="fas fa-phone me-2 text-success"></i>Contact: 0999-222-333</li>
+              <li class="mb-3"><i class="fas fa-comment me-2 text-info"></i>iMessage: ThirdyTres</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="p-4 bg-dark rounded shadow contact-form">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-custom">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Thirdy Garcia. All rights reserved.</p>
+    <div>
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
